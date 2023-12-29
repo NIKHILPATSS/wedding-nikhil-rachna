@@ -1,0 +1,26 @@
+ul#countdownTimer {
+	list-style: none;
+	margin: 30px 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+ul#countdownTimer li {
+	display: inline-block;
+}
+ul#countdownTimer li span {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 30px;
+}
+ul#countdownTimer li.separator {
+	font-size: 30px;
+	line-height: 25px;
+	vertical-align: top;
+	padding: 0 5px;
+}
+ul#countdownTimer li p {
+	color: #fff;
+	font-size: 16px;
+}
