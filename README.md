@@ -1,4 +1,4 @@
-# Wedding Landing Page - Daeng Sherly Menikah
+# Wedding Landing Page - Nikhil Rachna
 
 ![Thumbnail](/image/thumbnail-web-nikhil-rachna-wedding.png)
 
