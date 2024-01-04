@@ -350,7 +350,14 @@
 		<script type="text/javascript">
 			$(document).on('click', function(){
 				document.getElementById("my_audio").play();
-				console.log('Shaadi me zaroor aana');
+			});
+
+			document.addEventListener("visibilitychange", function() {
+				if (document.hidden){
+					document.getElementById("my_audio").pause();
+				} else {
+					document.getElementById("my_audio").play();
+				}
 			});
 		</script>
       </div>
