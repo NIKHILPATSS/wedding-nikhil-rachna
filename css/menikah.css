@@ -47,7 +47,37 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+.arrow {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 29px;
+  height: 25px;
+  cursor: pointer;
+  color: black;
+  animation: jumpArrow 1s infinite;
+  border: 2px solid #b79d98;
+  padding: 0 5px;
+  border-radius: 100%;
+  background-color: #f4e2e2;
+}
 
+#down-arrow {
+  width: 15px;
+  height: 20px;
+}
+
+@keyframes jumpArrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 
 .hero .title {
   font-family: 'Rouge Script', sans-serif;
