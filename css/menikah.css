@@ -62,6 +62,10 @@ html {
   background-color: #f4e2e2;
 }
 
+body.no-scroll .arrow {
+  display: none;
+}
+
 #down-arrow {
   width: 15px;
   height: 20px;

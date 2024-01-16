@@ -88,7 +88,7 @@
 					</div>
 				</div>
 			</nav>
-			<a  class="arrow" href="#scrolldown"><i id="down-arrow" class="fa fa-arrow-down fa-2x"></i></a>
+			<div id="arrow" class="arrow"><i id="down-arrow" class="fa fa-arrow-down fa-2x"></i></div>
 			<!-- End Mobile Nav -->
 			<!-- Begin Hero Content-->
 			<div class="hero-body">
@@ -338,7 +338,7 @@
 	</div>
 	<!-- End Main Content -->
 	<!-- Begin Footer -->
-	<div class="footer">
+	<div id="footer" class="footer">
 		<div class="container">
 			<a class="has-vertically-align">
 				<p class="has-vertically-align">2024 &copy Nikhil Rajkumar Patange</p>
@@ -360,6 +360,23 @@
 					document.getElementById("my_audio").play();
 				}
 			});
+			document.addEventListener('DOMContentLoaded', function () {
+				// Check if there is a scrollbar
+				const hasScrollbar = document.body.scrollHeight > window.innerHeight;
+				if (!hasScrollbar) {
+					document.body.classList.add('no-scroll');
+				}
+
+				document.addEventListener('scroll', function () {
+					const isAtBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+					if (isAtBottom) {
+						document.body.classList.add('no-scroll');
+					} else {
+						document.body.classList.remove('no-scroll');
+					}
+				});
+			});
+
 		</script>
       </div>
 	<!-- Scripts -->
