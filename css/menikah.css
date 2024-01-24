@@ -36,6 +36,9 @@ html {
   font-color: #996E6D;
 }
 
+.custom-burger{
+  margin-left: 0;
+}
 
 .hero {
   background-image: url(https://picsum.photos/id/25/1920/1080);
